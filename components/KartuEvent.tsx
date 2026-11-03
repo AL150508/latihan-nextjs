@@ -4,15 +4,15 @@ import { rupiah, type Event } from "@/data/events";
 export default function KartuEvent({ event }: { event: Event }) {
   const sisa = event.kuota - event.terisi;
   return (
-    <div className="rounded-xl border bg-white p-4 shadow-sm">
+    <div className="rounded-xl border bg-white p-4 shadow-sm text-black">
       <span className="rounded bg-blue-100 px-2 py-0.5 text-xs text-blue-700">
         {event.kategori}
       </span>
-      <h3 className="mt-2 text-lg font-semibold">{event.judul}</h3>
-      <p className="text-sm text-slate-500">
+      <h3 className="mt-2 text-lg font-semibold text-black">{event.judul}</h3>
+      <p className="text-sm text-gray-700">
         {event.tanggal} · {event.lokasi}
       </p>
-      <p className="mt-2 font-medium">{rupiah(event.harga)}</p>
+      <p className="mt-2 font-medium text-black">{rupiah(event.harga)}</p>
       <p
         className={
           sisa === 0 ? "text-sm text-red-600" : "text-sm text-green-700"

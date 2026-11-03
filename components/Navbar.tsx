@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const menu = [
   { href: "/", teks: "Beranda" },
   { href: "/event", teks: "Event" },
+  { href: "/favorit", teks: "Favorit" },
   { href: "/tentang", teks: "Tentang" },
   { href: "/kontak", teks: "Kontak" },
 ];
@@ -22,7 +23,7 @@ export default function Navbar() {
           className={
             pathname === m.href
               ? "font-semibold text-blue-600"
-              : "text-slate-600 hover:text-blue-600"
+              : "text-black hover:text-blue-600"
           }
         >
           {m.teks}

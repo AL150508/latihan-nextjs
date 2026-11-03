@@ -70,6 +70,16 @@ export const events: Event[] = [
     kuota: 60,
     terisi: 18,
   },
+  {
+    id: 7,
+    judul: "Workshop UI/UX Design",
+    kategori: "Workshop",
+    tanggal: "2026-12-15",
+    lokasi: "Lab Komputer 2",
+    harga: 20000,
+    kuota: 50,
+    terisi: 25,
+  },
 ];
 
 export function rupiah(n: number) {
