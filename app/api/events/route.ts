@@ -1,5 +1,6 @@
 import { events } from "@/data/events";
+import { NextResponse } from "next/server";
 
-export async function GET(request: Request) {
-  return Response.json(events);
+export async function GET() {
+  return NextResponse.json(events);
 }
